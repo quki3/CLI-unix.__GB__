@@ -59,6 +59,7 @@ mkdir dir1 dir2 etc//? crea un directorio
 touch file1 file2 //? crea un archivo
 > nombredelarchivo.txt //? crea un archivo de texto
 cp filenametocopy newfilenametoname //? copia el archivo
+
 mv filenametomove ..(rutatomove) //? nos permite mover un archivo
 mv filename newfilename //? renombra el archivo
 rm filename //? remueve el archivo
