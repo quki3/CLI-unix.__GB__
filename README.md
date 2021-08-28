@@ -10,7 +10,7 @@
           mako
           cory 
          }
-  - usr  {
+   - usr  {
           lib
           }
   - var
@@ -214,7 +214,8 @@ unzip archivoadescomprimir.zip
 ps //? muestra los procesos que estan corriendo en nuestra terminal actualmente
 ps -fy //? ft listado de las consolas
 ps aux //? nos muestra el usuario, el numero del proceso, cuanta cpu, cuanta memoria , que tty estoy utilizando y cualcomando esta realizando este proceso
-ps aux | grep
+ps aux | grep nombredeluser //? nos muestra los prosesos ejcutados por el usuario
+
 top //? muestra los procesos que estan usando mas recursos
 kill //? mata procesos desde nuestra terminal
 kill -9 numero del proceso o PID //? esto mata el proceso -9 para que no te pregunte nada mas
@@ -232,5 +233,47 @@ tty //? para ver la terminal en la que estoy conectado
 w //? para ver que usuarios estan corriendo en la terminal
 who //? una informacion mas sutil de los usuarios conectados
 chvt //? crea una terminal creo?
+jobs //? muestra los procesos parados
+fg //? te trae de nuevo el proceso parado ejemplo en vim
 ```
+# servidores
+```bash
+nohup ./nombredelarchivo.ejm //? esto nos da un archivo nohup.out de lo que hizo el proceso muy util en los despliegues de servidores
+top //? nos muestra los procesos de nuestro equipo
+cat /proc/cpuinfo | grep "processor" //? nos da los procesadores que tenemos
+sudo ps auxf | sort -nr -k 3 | head -5 //? nos muestra los 5 procesos que estan consumiendo mas cpu
+sort //? ordena 
+head //? te da una vista de ayuda
+sudo ps auxf | sort -nr -k 4 | head -5 //? nos muestra el cunsumo de la memoria ram
+free //? nos da la memoria ram
+free -h //? nos da la memoria ram dada en gib o megabyte
+du //? nos da los datos del disco?
+htop //? podemos organizar mejor los procesos para entender mejor
 
+```
+# parametros de red
+```bash
+ifconfig //? nos da algunos datos como ip
+ip a //? tambien muestra la informacion de la red
+hostname //? nos da el nombre como identificamos este equipo en cadda una de la redes
+route -n //? nos da la puerta predeterminada a nuestra red
+nslookup google.com //? nos muestra la direccion de ese dominio
+curl //? descarga siertas cosas del sistema operativo curl puede realizar simulaciones como lo hace un sofware como posman pero desde  la consola
+curl localhost //? esto interactua como posman
+wget algundominio //? esto trae informacion de el dominio
+```
+# Manejo de paquetes
+```bash
+Debian/ubuntu
+.deb
+dpkg-reconfigure
+repositorios apt
+/var/lib/dpkg //? aca se localiza la base de datos DPKG
+dpkg -l //? lista todos los debs instalados en la maquina
+dpkg -i paquete.deb //? realiza la instalacion de un paquete
+apt install paquete
+dpkg -r paquete.deb //? remover un paquete del sistema
+dpkg-reconfigure paquete //? volver a ejecutar el asistente de configuracion si esta disponible por ejemplo ajustar la hora del servidor
+
+
+```
