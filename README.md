@@ -274,6 +274,29 @@ dpkg -i paquete.deb //? realiza la instalacion de un paquete
 apt install paquete
 dpkg -r paquete.deb //? remover un paquete del sistema
 dpkg-reconfigure paquete //? volver a ejecutar el asistente de configuracion si esta disponible por ejemplo ajustar la hora del servidor
+apt-get update //? actualizamos los indices del paquete apt va a pedir sudo
+sudo apt-get update
+sudo apt-get upgrade //? una vez actualizados los indices este comando descarga 
+sudo apt dist-upgrade //? es un poco mas desprolijo te actualiza los paquetes pero tendras que reiniciar la maquina
+sudo anap install canonicallivepatch //? permite instalar paquetes con dist-update sin tener que reiniciar
+sudo apt search newpaquete //? busca un paquete en especifico
+dpkg -l //? lista los paquetes que tenemos en nuestro sistema operativo
+sudo dpkg-reconfigure tzdata //? esto reconfigurara la hora a la que elijamos
+sudo dpkkg-reconfigure nombredelpaquete
+snap //? es una version mas nueva de apt que es mas replicable en otras distribuciones linux
+sudo snap search aws-cli //? nos muestra no se bien que
+sudo snap refresh --list //? nos muestra los paquetes a actualizar
+sudo snap info aws-cli //? nos muestra info del paquete
 
 
+
+```
+# monitoreo de base de datos
+```bash
+sudo apt install build-essential libgd-dev openssl libssl-dev unzip apache2 php gcc libdbi-perl libdbd-mysql-perl 
+```
+# descomprimir archivos
+```bash
+tar //? descomprime y desempaqueta
+tar xvzf archivo.tar.gz //? x extraer v para que tenga verbouse (por pantalla mostrara lo que esta realizando) z porque es un formato que esta enpaquetado y comprimido f le indica que va a ir un archivo
 ```
