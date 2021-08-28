@@ -127,7 +127,20 @@ octal   binario   permisos
 r //? permisos de lectura
 x //? permisos de ejecucion
 w //? permisos de escritura
-  
+a //? todos
+g //? grupos
+u //? usuarios
+son nueve caracteres
+rrrxxxwww //? los tres primeros son para el usuario los tres siguientes son para el grupo y los ultimos tres son para otros usuarios
+chmod u+x algunarchivo.txt //? le da los permisos al usuario de x ejecucion
+chmod +x archivo.txt //? le da los permisos de ejecucion a todos 
+formato octal
+r = 4
+w = 2
+x = 1
+rwx-xr--x = 751
+sudo chown rood:rood archivo.txt //? cambia el propietario del archivo 
+
 ```
 # modo simbolico
 ```bash
@@ -199,8 +212,12 @@ unzip archivoadescomprimir.zip
 # manejo de procesos
 ```bash
 ps //? muestra los procesos que estan corriendo en nuestra terminal actualmente
+ps -fy //? ft listado de las consolas
+ps aux //? nos muestra el usuario, el numero del proceso, cuanta cpu, cuanta memoria , que tty estoy utilizando y cualcomando esta realizando este proceso
+ps aux | grep
 top //? muestra los procesos que estan usando mas recursos
 kill //? mata procesos desde nuestra terminal
+kill -9 numero del proceso o PID //? esto mata el proceso -9 para que no te pregunte nada mas
 ```
 # vim
 ```bash
@@ -208,5 +225,12 @@ vim //? para entrar a vim
 :q //? para salir de vim
 vim index.html //? crea un archivo index en el aditor
 ```
-# personalizacion de la terminal
+# Terminal
+```bash
+ssh localhost //? nos crea una nueva coneccion en el sistema operativo 
+tty //? para ver la terminal en la que estoy conectado
+w //? para ver que usuarios estan corriendo en la terminal
+who //? una informacion mas sutil de los usuarios conectados
+chvt //? crea una terminal creo?
+```
 
