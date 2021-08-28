@@ -56,6 +56,7 @@ find ./ -type d -name nombredeldirectorio
 find ./ -type f -name *.log //? busca el archivo .log
 find ./ -size 20M //? busca los archivos por taman:o mayores a 20 megas
 mkdir dir1 dir2 etc//? crea un directorio
+man comando //? man recive como parametro un comando a consultar es como un manual de uso
 touch file1 file2 //? crea un archivo
 > nombredelarchivo.txt //? crea un archivo de texto
 cp filenametocopy newfilenametoname //? copia el archivo
@@ -71,7 +72,7 @@ head nombredelfile //? muestra el contenido del archivo primeras 10 lineas
 head nombredelfile -n 15//? modifica las primeras lineas que tira por defecto ahora son 15
 tail nombredelarchivo //? nos muestra las ultimas lineas de un archivo
 tail nombredelfile -n 15 //? las ultimas 15 lineas
-
+tail -f //? queda ala escucha  de algun cambio en el archivo
 xdg-open nombredelarchivo //? te abre el archivo con el editor de texto predeterminado
 nautilus nombredelarchivo //? abre el archivo con otra iunterfas grafica
 help cd(alguncomando) //?nos muestra todo lo que podemos hacer con ese comando
@@ -126,7 +127,7 @@ octal   binario   permisos
 r //? permisos de lectura
 x //? permisos de ejecucion
 w //? permisos de escritura
-
+  
 ```
 # modo simbolico
 ```bash
