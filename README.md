@@ -83,6 +83,7 @@ echo "hola mundo" //? solo genera una salida en la terminal
 echo $nombredelavariabledeentorno //? imprime la variable de entorno
 cat unarchivo segundoarchivo //? concatena archivos
 cat nombredelarchivo //? lee el archivo
+cat /etc/lsb-release //? aca vemos que distribucion de ubuntu toca
 cat > nombredelarchivo //? permite escribir dentro del archivo Ctrl d para dejar de escribir
 chmod numerosenmodooctal nombredelarchivo //? cambia los permisos del archivo
 chmod u-r nombredelarchivo //? la u es de usuario el menos de de quitar la r es de lectura
