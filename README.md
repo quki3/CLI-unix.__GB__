@@ -17,6 +17,7 @@
 ```
 # visual studio
 ```bash
+`borrar gabriel nestor brufau borrar gabriel nestor brufau borrar `
 code .nombredelarchivo //? abre el archivo en visual
 ```
 # comandos
