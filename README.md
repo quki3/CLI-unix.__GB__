@@ -1,19 +1,22 @@
 # TERMINAL.__GB__
+
+*sistema de archivos de linux*
 ```bash
-/ - etc
-  - dev
-  - home {
-          jono {
-                work
-                photos
-                }
-          mako
-          cory 
-         }
-   - usr  {
-          lib
-          }
-  - var
+/`raiz`     - etc
+            - dev
+            - home`~ simbolo que representa al home en bash`
+                   {
+                  jono {
+                        work
+                        photos
+                        }
+                  mako
+                  cory 
+                  }
+            - usr  {
+                  lib
+                  }
+            - var
 ```
 # visual studio
 ```bash
@@ -21,9 +24,10 @@ code .nombredelarchivo //? abre el archivo en visual
 ```
 # comandos
 ```bash
-ls //? muestra las carpetas de donde estamos ubicados
-ls -l //? muestra los archivos 
-ls -lh //? le da una lectura mas humana
+`borrar gabriel nestor brufau borrar gabriel nestor brufau borrar`
+ls ` muestra las carpetas de donde estamos ubicados`
+ls -l ` muestra los archivos `
+ls -lh ` le da una lectura mas humana`
 ls -la //? muestra todos los archivos incluido los archivos ocultos
 ls -lS //? muestra y ordena por tamanios
 ls -lr //? muestra los archivos de la z a la a re reverse
@@ -44,12 +48,18 @@ less nombredelarchivo //? te muestra todo el archivo {
                                                       /nombredelabusqueda //?permitebuscar una palabra
                                                       q //?para salir
                                                       }
-cd //? cd sin parametros te lleva a home
-cd nombredelarchivoocarpeta//?entra a el archivo o carpeta
-cd .. //? de lleva una carpeta mas atras
+cd ` cd sin parametros te lleva a home`
+cd nombredelarchivoocarpeta `entra a el archivo o carpeta`
+cd .. ` de lleva una carpeta mas atras`
+
 clear //? borra la vista dela terminal
-pwd //? muestra la ruta de donde estamos
-file //? da mucha informacion
+
+pwd ` muestra la ruta de donde estamos`
+
+file ` da mucha informacion`
+file nombredelarchivo `da mucha informacion del archivo`
+file ./path/archivo.arch `lo mismo pero para cuando estamos fuera`
+
 find ./ <name nombredelarchivo //? busca todos los archivos que se llamen asi
 find ./ -name *.txt | less //? busca todos los archivos que terminen en eso y te da info
 find ./ -type f -name nombredelfile //? busca por type
