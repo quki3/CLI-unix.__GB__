@@ -28,7 +28,8 @@ ls -la //? muestra todos los archivos incluido los archivos ocultos
 ls -lS //? muestra y ordena por tamanios
 ls -lr //? muestra los archivos de la z a la a re reverse
 ls *.txt //? busca todos los archivos que terminan en txt
-ls primeraspalabrasdelarchivo* //? busca todos los archivos que conincidan con las palabras que pongas antes del *
+ls primeraspalabrasdelarchivo* //? busca todos los archivos
+   //`que conincidan con las palabras que pongas antes del *`
 ls primerasletrasdelarchivo? //? busca todas las coincidencias que tengan las letras y solo un caracter final
 ls primerasletrasdelarchivo??? //? busca todas las coincidencias que tengan las letras y solo tres caracter final
 ls [[:upper:]]* //? busca todas las carpetas que empiezan con uppercat mayusculas
