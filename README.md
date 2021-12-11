@@ -44,10 +44,15 @@ ls nombrefile >> nombrefile //? concatena los archivos con el nuevo nombre que l
 ls archivoquedaunerror 2> error.txt //? crea un archivo que dentro podemos visualizar el errror con el comando head
 ls archivoquenosavemoscomoresultara > output.txt 2>&1 //? si no sabemos si el archivo nos va a arrojar un arror o reject
 ln -s rutade/ejemplo linkdeejemplo //? acceso directo
-less nombredelarchivo //? te muestra todo el archivo {
-                                                      /nombredelabusqueda //?permitebuscar una palabra
-                                                      q //?para salir
-                                                      }
+
+less nombredelarchivo` te muestra todo el archivo de manera
+interactiva 
+{
+ "/nombredelabusqueda" : permitebuscar una palabra
+ "q" : para salir
+ `
+}
+                                                      }`
 cd ` cd sin parametros te lleva a home`
 cd nombredelarchivoocarpeta `entra a el archivo o carpeta`
 cd .. ` de lleva una carpeta mas atras`
@@ -74,18 +79,25 @@ cp filenametocopy newfilenametoname //? copia el archivo
 
 mv filenametomove ..(rutatomove) //? nos permite mover un archivo
 mv filename newfilename //? renombra el archivo
+
 rm filename //? remueve el archivo
 rm -i filename //? interactivo
 rm -rf //? fuerza remover cualquier archivo
 rm -ri dir1 //? va a borrar de a un archivo hasta el dir1 preguntandote
 rm -r dirname dirmane dirname //? remueve los directorios
+
 head nombredelfile //? muestra el contenido del archivo primeras 10 lineas
 head nombredelfile -n 15//? modifica las primeras lineas que tira por defecto ahora son 15
+
 tail nombredelarchivo //? nos muestra las ultimas lineas de un archivo
 tail nombredelfile -n 15 //? las ultimas 15 lineas
 tail -f //? queda ala escucha  de algun cambio en el archivo
-xdg-open nombredelarchivo //? te abre el archivo con el editor de texto predeterminado
-nautilus nombredelarchivo //? abre el archivo con otra iunterfas grafica
+
+xdg-open nombredelarchivo `te abre el archivo con el editor de
+texto predeterminado`
+nautilus nombredelarchivo `abre el archivo con otra iunterfas
+grafica`
+nombredelprograma archivo `abrira el archivo?`
 help cd(alguncomando) //?nos muestra todo lo que podemos hacer con ese comando
 man cd(alguncomando) //? nos muestra todo lo que podemos hacer con ese comando
 info cd(alguncomando) //? nos muestra todo lo que podemos hacer con ese comando
