@@ -24,6 +24,33 @@ code .nombredelarchivo //? abre el archivo en visual
 ```
 # comandos
 ```bash
+a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+k
+l
+m
+n
+o
+p
+q
+r
+s
+t
+tree dirname `muestra el arbol de la carpeta`
+u
+v
+w
+z
+y
+z
 `borrar gabriel nestor brufau borrar gabriel nestor brufau borrar`
 ls ` muestra las carpetas de donde estamos ubicados`
 ls -l ` muestra los archivos `
