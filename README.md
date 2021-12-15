@@ -25,20 +25,56 @@ code .nombredelarchivo //? abre el archivo en visual
 # comandos
 ```bash
 `borrar gabriel nestor brufau borrar gabriel nestor brufau borrar`
+a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+k
+l
+ls namedir* `busca todos los que empiezan con namedir y continua
+con lo que sea`
+ls namedir? `busca todos los que emopiezan con namedir mas ? un 
+caracter`
+m
+n
+o
+p
+q
+r
+s
+t
+u
+v
+w
+x
+y
+z
+
 ls ` muestra las carpetas de donde estamos ubicados`
 ls -l ` muestra los archivos `
 ls -lh ` le da una lectura mas humana`
 ls -la //? muestra todos los archivos incluido los archivos ocultos
 ls -lS //? muestra y ordena por tamanios
 ls -lr //? muestra los archivos de la z a la a re reverse
-ls *.txt //? busca todos los archivos que terminan en txt
+ls *.txt ` busca todos los archivos .txt`
 ls primeraspalabrasdelarchivo* `busca todos los archivos
    que conincidan con las palabras que pongas antes del *`
 ls primerasletrasdelarchivo? //? busca todas las coincidencias que tengan las letras y solo un caracter final
 ls primerasletrasdelarchivo??? //? busca todas las coincidencias que tengan las letras y solo tres caracter final
-ls [[:upper:]]* //? busca todas las carpetas que empiezan con uppercat mayusculas
-ls -d [[:upper:]]* //? busca todas los directorios que empiezan con uppercat mayusculas
-ls [[:lower:]]* //? busca todas las carpetas que empiezan con minusculas
+ls [[:upper:]]*` busca todas las carpetas en al menos dos
+niveles que empiezan con uppercat mayusculas`
+ls -d [[:upper:]]* ` busca todas los directorios que 
+empiezan con uppercat mayusculas`
+ls [[:lower:]]* ` busca todas las carpetas y archivos
+que empiezan con minusculas`
+ls [ad]* `busca todos los archivos que empiezan con a y todos
+los archivos que empiezan con d`
 ls nombrefile > nombrefile //? copia/sobrescribe lo que hay en el primero al segundo
 ls nombrefile >> nombrefile //? concatena los archivos con el nuevo nombre que le des si no existe lo crea
 ls archivoquedaunerror 2> error.txt //? crea un archivo que dentro podemos visualizar el errror con el comando head
