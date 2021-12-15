@@ -45,6 +45,7 @@ r
 s
 t
 tree dirname `muestra el arbol de la carpeta`
+tree dirname -L 3 `-L da el nivel de busqueda 3 cantidad de niveles`
 u
 v
 w
