@@ -30,6 +30,7 @@ forzamos a que instale los paquetes que faltan`
 b
 c
 d
+sudo dpkg --install namefiledownload.deb `instala el archivo .deb`
 e
 f
 g
