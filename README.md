@@ -25,6 +25,8 @@ code .nombredelarchivo //? abre el archivo en visual
 # comandos
 ```bash
 a
+sudo apt -f install `cuando hay algun problema de dependencia
+forzamos a que instale los paquetes que faltan`
 b
 c
 d
