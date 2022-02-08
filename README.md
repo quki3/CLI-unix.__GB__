@@ -29,6 +29,8 @@ sudo apt -f install `cuando hay algun problema de dependencia
 forzamos a que instale los paquetes que faltan`
 b
 c
+cp -r copiar copia1 `copia  la carpeta -r indica recurcividad
+copia todas las carpetas y archivos internos`
 d
 sudo dpkg --install namefiledownload.deb `instala el archivo .deb`
 e
