@@ -86,6 +86,7 @@ u
 v
 w
 x
+x-www-browser ./ruta/archivo `abre un archivo con el browser`
 y
 z
 
