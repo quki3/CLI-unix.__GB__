@@ -54,7 +54,8 @@ tree dirname -L 3 `-L da el nivel de busqueda 3 cantidad de niveles`
 u
 v
 w
-z
+x
+xdg-open ./namearchivo `abre el archivo en browser`
 y
 z
 `borrar gabriel nestor brufau borrar gabriel nestor brufau borrar`
