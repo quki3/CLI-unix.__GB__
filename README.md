@@ -1,5 +1,7 @@
 # TERMINAL.__GB__
 
+
+
 *sistema de archivos de linux*
 ```bash
 /`raiz`     - etc
@@ -42,6 +44,7 @@ j
 k
 l
 m
+man nombrecomando `help to you t learn the comand`
 n
 o
 p
