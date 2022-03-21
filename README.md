@@ -36,6 +36,7 @@ copia todas las carpetas y archivos internos`
 d
 sudo dpkg --install namefiledownload.deb `instala el archivo .deb`
 e
+echo $PATH `inprime la variable de entorno PATH`
 f
 g
 h
@@ -51,6 +52,7 @@ p
 q
 r
 s
+source namearchivo `hacemos refresh como si cerramos y volvemos a abrir la terminal`
 t
 tree dirname `muestra el arbol de la carpeta`
 tree dirname -L 3 `-L da el nivel de busqueda 3 cantidad de niveles`
@@ -69,6 +71,7 @@ d
 e
 f
 g
+grep parametro `print lines that match patterns`
 h
 i
 j
