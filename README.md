@@ -1,5 +1,14 @@
 # TERMINAL.__GB__
 
+instalations
+- `tar xf class="hljs-sqbracket"> [filename]`
+- Esto expandirá el contenido del archivo a una carpeta. Entonces los comandos son, desde la carpeta:
+
+`./configure`
+`make`
+`sudo make install`
+- Fuente: https://www.enmimaquinafunciona.com/pregunta/177811/como-instalar-un-archivo-tarxz-en-ubuntu
+
 
 
 *sistema de archivos de linux*
